@@ -33,7 +33,7 @@
 				var curKey = component[0];
 				if( curKey ) {
 					var curValue = component.length > 1 ? component[1] : null;
-					components[curKey] = curValue;
+					components[curKey] = decodeURIComponent( curValue );
 				}
 			}
 		}
